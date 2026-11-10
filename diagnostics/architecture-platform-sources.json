@@ -1,0 +1,27 @@
+[
+  {
+    "id": "composition",
+    "url": "https://learn.microsoft.com/en-us/windows/apps/desktop/modernize/visual-layer-in-desktop-apps",
+    "status": 200,
+    "excerpts": [
+      "n-UWP desktop applications to enhance the look, feel, and functionality of your WPF, Windows Forms, and C++ Win32 applications, and take advantage of the latest Windows UI features that are only available via UWP. For many scenarios, you can u",
+      "als help you get started using the Visual layer and show you how features work. Win32 Using the Visual layer with Win32 tutorial Hello Composition sample Hello Vectors sample Virtual Surfaces sample Screen Capture sample Windows Forms Using the ",
+      "Visual layer with Windows Forms tutorial Hello Composition sample Visual Layer Integration sample WPF Using the Visual layer with WPF tutorial Hello Composition sample Visual Layer Integratio",
+      "r rendering text. When two different UI technologies are used together, such as WPF and the Visual Layer, they are each responsible for drawing their own pixels on the screen, and they can't share pixels. As a result, Visual Layer content is a"
+    ]
+  },
+  {
+    "id": "ifileoperation",
+    "url": "https://learn.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileoperation",
+    "status": 200,
+    "excerpts": [
+      " IFileOperation (shobjidl_core.h) - Win32 apps | Microsoft Learn Skip to main content Skip to Ask Learn chat experience This browser is no longer supported. Upgrade to Microsoft Edge to take advantage ",
+      " could be misleading or inaccurate. Extensibility. As a Component Object Model (COM) interface, IFileOperation can have its capabilities extended by a third-party to meet their specific needs, although this should be a very rare case. Windows "
+    ]
+  },
+  {
+    "id": "nodeembedding",
+    "url": "https://nodejs.org/api/embedding.html",
+    "error": "fetch failed"
+  }
+]

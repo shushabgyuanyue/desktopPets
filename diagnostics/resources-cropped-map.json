@@ -1,0 +1,93 @@
+{
+  "label": "cropped-map",
+  "durationMs": 6026,
+  "viewport": [
+    1536,
+    864,
+    1.25
+  ],
+  "data": {
+    "frames": 376,
+    "times": {
+      "simulationMs": 63.899999260902405,
+      "snapshotMs": 15.100000023841858,
+      "mapMs": 614.0999998450279,
+      "antsMs": 347.8000000715256,
+      "panelMs": 2.3000001311302185
+    },
+    "fullClears": 395,
+    "clearPixels": 510221502.0800016,
+    "elapsed": 187.01309999997056,
+    "completedTrips": 60,
+    "renderer": {
+      "drawCalls": 36,
+      "iconClears": 18,
+      "spriteCount": 36,
+      "greetings": 3,
+      "atlasBuilds": 1,
+      "atlasBytes": 663552,
+      "canvasPixels": 1958400
+    },
+    "heap": 11200000
+  },
+  "processes": [
+    {
+      "type": "Browser",
+      "pid": 19572,
+      "privateMB": 66.1171875,
+      "workingMB": 116.515625,
+      "cpuPercent": -0.15658465474123565
+    },
+    {
+      "type": "GPU",
+      "pid": 15416,
+      "privateMB": 88.58203125,
+      "workingMB": 159.19921875,
+      "cpuPercent": 8.05886042094758
+    },
+    {
+      "type": "Utility",
+      "pid": 13120,
+      "privateMB": 13.0078125,
+      "workingMB": 77.453125,
+      "cpuPercent": 0.06729614642763822
+    },
+    {
+      "type": "Tab",
+      "pid": 22100,
+      "privateMB": 64.62109375,
+      "workingMB": 129.69140625,
+      "cpuPercent": 4.218116110535903
+    }
+  ],
+  "hidden": [
+    {
+      "type": "Browser",
+      "pid": 19572,
+      "privateMB": 66.1171875,
+      "workingMB": 116.515625,
+      "cpuPercent": 0.1716133042054536
+    },
+    {
+      "type": "GPU",
+      "pid": 15416,
+      "privateMB": 87.92578125,
+      "workingMB": 158.6015625,
+      "cpuPercent": 0.37240354411962495
+    },
+    {
+      "type": "Utility",
+      "pid": 13120,
+      "privateMB": 13.0078125,
+      "workingMB": 77.453125,
+      "cpuPercent": 0
+    },
+    {
+      "type": "Tab",
+      "pid": 22100,
+      "privateMB": 64.56640625,
+      "workingMB": 129.703125,
+      "cpuPercent": 0.13380510279451366
+    }
+  ]
+}

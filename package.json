@@ -1,0 +1,23 @@
+{
+  "name": "ant-colony-desktop-pet",
+  "version": "1.0.0",
+  "description": "蚁群桌面宠物：把桌面变成一张会寻找食物的蚁群地图。",
+  "main": "main.js",
+  "scripts": {
+    "build:renderer": "esbuild renderer/ant-sketch-renderer.js --bundle --format=iife --global-name=AntSketchRenderer --platform=browser --target=chrome126 --outfile=renderer/ant-sketch-renderer.bundle.js",
+    "prestart": "npm run build:renderer",
+    "start": "electron .",
+    "pack:win:dir": "npm run build:renderer && electron-builder --config electron-builder.config.cjs --dir --publish never",
+    "dist:win": "npm run build:renderer && electron-builder --config electron-builder.config.cjs --win nsis --x64 --publish never",
+    "dist:win:portable": "npm run build:renderer && electron-builder --config electron-builder.config.cjs --win portable --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0",
+    "esbuild": "^0.28.2",
+    "three": "^0.187.0"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.11"
+  }
+}

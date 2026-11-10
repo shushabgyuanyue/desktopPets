@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#18231c">
+    <meta name="description" content="蚁群是一只住在真实桌面上的小型蚂蚁桌宠。它会探索、嗅探、发现食物，并把桌面文件搬进回收站。">
+    <title>蚁群 · 住在桌面上的小小世界</title>
+    <link rel="icon" href="./assets/ant-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="蚁群首页">
+        <img src="./assets/ant-icon.svg" alt="">
+        <span>蚁群</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#world">小世界</a>
+        <a href="#how">怎么玩</a>
+        <a href="#download">下载</a>
+        <a class="nav-github" href="https://github.com/shushabgyuanyue/desktopPets" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span class="pulse-dot"></span> 桌面正在苏醒</p>
+          <h1 id="hero-title">蚁群</h1>
+          <p class="hero-lede">一群会在你桌面上生活的小蚂蚁。它们自己探索、互相传递气味，再把你选中的文件一点点搬回巢穴。</p>
+          <div class="hero-actions" id="download">
+            <a class="button button-primary" href="https://github.com/shushabgyuanyue/desktopPets/releases/latest" target="_blank" rel="noreferrer">下载 Windows 版 <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="https://github.com/shushabgyuanyue/desktopPets/releases/latest" target="_blank" rel="noreferrer">打开 GitHub Release</a>
+          </div>
+          <p class="hero-meta">Windows 10 / 11 · x64 · 离线运行 · 安装版与免安装版</p>
+        </div>
+        <div class="hero-note" aria-hidden="true">
+          <span class="note-line"></span>
+          <span>把桌面留给它们</span>
+        </div>
+      </section>
+
+      <section class="intro-band" id="world">
+        <div class="section-heading">
+          <p class="eyebrow dark"><span class="pulse-dot"></span> 一个会自己长大的小世界</p>
+          <h2>它们没有固定路线。</h2>
+          <p>每只蚂蚁都只知道眼前的气味和脚下的障碍。路线会在探索、发现和回巢之间慢慢出现。</p>
+        </div>
+        <div class="world-grid">
+          <figure class="world-shot world-shot-main">
+            <img src="./assets/space-pet-panel.png" alt="蚁群桌宠控制面板和桌面蚂蚁">
+            <figcaption>实时桌面 · 蚂蚁、文件和障碍物共处一屏</figcaption>
+          </figure>
+          <div class="world-copy">
+            <div class="feature-row">
+              <span class="feature-index">01</span>
+              <div><h3>先探索，再记住</h3><p>探索信息素和食物信息素会随时间衰减，旧路会淡，新路会被重新发现。</p></div>
+            </div>
+            <div class="feature-row">
+              <span class="feature-index">02</span>
+              <div><h3>文件变成食物</h3><p>从桌面选择一个或多个文件，图标会变成可搬运的馒头，文件名仍然留在原处。</p></div>
+            </div>
+            <div class="feature-row">
+              <span class="feature-index">03</span>
+              <div><h3>每次搬运都有停顿</h3><p>蚂蚁会嗅探、切割、叼起食物，再沿着逐渐清晰的路线回到左上角巢穴。</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="behavior-band" id="how" aria-labelledby="behavior-title">
+        <div class="behavior-copy">
+          <p class="eyebrow dark"><span class="pulse-dot"></span> 看见它们的动作</p>
+          <h2 id="behavior-title">小小的动作，也有自己的节奏。</h2>
+          <p>停下来闻一闻，贴着障碍绕过去，发现食物后呼唤同伴。蚁群不是一段循环动画，而是一群会对桌面变化做出反应的角色。</p>
+          <a class="text-link" href="https://github.com/shushabgyuanyue/desktopPets" target="_blank" rel="noreferrer">查看项目源码 <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="behavior-art">
+          <img src="./assets/space-pet-art.png" alt="蚂蚁动作和传送门演出图">
+          <figcaption>探索、传送、搬运 · 每一个状态都能被看见</figcaption>
+        </figure>
+      </section>
+
+      <section class="download-band" aria-labelledby="download-title">
+        <div>
+          <p class="eyebrow"><span class="pulse-dot"></span> 现在就让它住下来</p>
+          <h2 id="download-title">下载一群自己的小邻居。</h2>
+          <p>从 GitHub Release 获取最新版本。安装版支持应用内检查更新，免安装版下载后直接运行。</p>
+        </div>
+        <a class="button button-primary" href="https://github.com/shushabgyuanyue/desktopPets/releases/latest" target="_blank" rel="noreferrer">前往下载 <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="./assets/ant-icon.svg" alt=""><span>蚁群</span></div>
+      <p>一个住在真实桌面上的情绪玩具。</p>
+      <a href="https://github.com/shushabgyuanyue/desktopPets" target="_blank" rel="noreferrer">shushabgyuanyue / desktopPets</a>
+    </footer>
+  </body>
+</html>

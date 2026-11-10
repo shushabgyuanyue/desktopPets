@@ -1,0 +1,20 @@
+{
+  "node": "v22.14.0",
+  "frames": 600,
+  "simulatedSeconds": 10.000000000000076,
+  "wallMs": 12340.225199999999,
+  "workMs": 523.6357999999949,
+  "cpuMs": 969,
+  "cpuPercentOneCore": 7.8523688530416775,
+  "snapshotKiBPerSecond": 479.19743773193056,
+  "tracesKiBPerSecond": 325.2440612621478,
+  "memory": {
+    "rss": 57012224,
+    "heapTotal": 16023552,
+    "heapUsed": 8669816,
+    "external": 9086168,
+    "arrayBuffers": 7825471
+  },
+  "peakRss": 58523648,
+  "limitation": "Headless simulation and JSON serialization only; RSS is not private memory. No native renderer, panel, actual IPC or file service."
+}

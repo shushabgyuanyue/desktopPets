@@ -1,0 +1,89 @@
+{
+  "label": "before",
+  "durationMs": 6022,
+  "viewport": [
+    1536,
+    864,
+    1.25
+  ],
+  "data": {
+    "frames": 376,
+    "times": {
+      "simulationMs": 55.80000019073486,
+      "snapshotMs": 14.600000083446503,
+      "mapMs": 527.4999998211861,
+      "antsMs": 323.30000030994415,
+      "panelMs": 1.8999999165534973
+    },
+    "fullClears": 764,
+    "clearPixels": 1012227444,
+    "elapsed": 187.0133000000182,
+    "completedTrips": 60,
+    "renderer": {
+      "drawCalls": 36,
+      "iconClears": 20,
+      "spriteCount": 36,
+      "greetings": 2,
+      "atlasBuilds": 1,
+      "atlasBytes": 663552,
+      "canvasPixels": 1958400
+    },
+    "heap": 11200000
+  },
+  "processes": [
+    {
+      "type": "Browser",
+      "pid": 22904,
+      "privateMB": 64.15234375,
+      "workingMB": 114.4765625,
+      "cpuMs": null
+    },
+    {
+      "type": "GPU",
+      "pid": 3600,
+      "privateMB": 98.1796875,
+      "workingMB": 169.6171875,
+      "cpuMs": null
+    },
+    {
+      "type": "Utility",
+      "pid": 25560,
+      "privateMB": 13.1796875,
+      "workingMB": 77.62890625,
+      "cpuMs": null
+    },
+    {
+      "type": "Tab",
+      "pid": 5084,
+      "privateMB": 68.51171875,
+      "workingMB": 133.546875,
+      "cpuMs": null
+    }
+  ],
+  "hidden": [
+    {
+      "type": "Browser",
+      "pid": 22904,
+      "privateMB": 64.15234375,
+      "workingMB": 114.5390625
+    },
+    {
+      "type": "GPU",
+      "pid": 3600,
+      "privateMB": 97.4453125,
+      "workingMB": 168.9375
+    },
+    {
+      "type": "Utility",
+      "pid": 25560,
+      "privateMB": 13.1796875,
+      "workingMB": 77.62890625
+    },
+    {
+      "type": "Tab",
+      "pid": 5084,
+      "privateMB": 68.48046875,
+      "workingMB": 133.51953125
+    }
+  ]
+}

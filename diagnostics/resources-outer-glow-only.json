@@ -1,0 +1,97 @@
+{
+  "label": "outer-glow-only",
+  "durationMs": 6023,
+  "viewport": [
+    1536,
+    864,
+    1.25
+  ],
+  "data": {
+    "frames": 311,
+    "times": {
+      "simulationMs": 58.50000047683716,
+      "snapshotMs": 17.000000178813934,
+      "pheromoneMs": 534.4000000357628,
+      "portalMs": 102.50000077486038,
+      "foodMs": 3.199999988079071,
+      "entryMs": 16.70000010728836,
+      "mapMs": 769.7000002264977,
+      "antsMs": 393.2999992966652,
+      "panelMs": 2.600000023841858
+    },
+    "fullClears": 20,
+    "clearPixels": 79185432.64000575,
+    "elapsed": 187.0308000000182,
+    "completedTrips": 59,
+    "renderer": {
+      "drawCalls": 36,
+      "iconClears": 20,
+      "spriteCount": 36,
+      "greetings": 4,
+      "atlasBuilds": 1,
+      "atlasBytes": 663552,
+      "canvasPixels": 1958400
+    },
+    "heap": 11900000
+  },
+  "processes": [
+    {
+      "type": "Browser",
+      "pid": 18744,
+      "privateMB": 64.640625,
+      "workingMB": 114.44921875,
+      "cpuPercent": -0.1934747423955801
+    },
+    {
+      "type": "GPU",
+      "pid": 8660,
+      "privateMB": 95.76171875,
+      "workingMB": 167.3046875,
+      "cpuPercent": 9.952506002525803
+    },
+    {
+      "type": "Utility",
+      "pid": 2756,
+      "privateMB": 13.02734375,
+      "workingMB": 77.54296875,
+      "cpuPercent": 0.005815269116345316
+    },
+    {
+      "type": "Tab",
+      "pid": 13464,
+      "privateMB": 68.84765625,
+      "workingMB": 134.3046875,
+      "cpuPercent": 4.381409528468352
+    }
+  ],
+  "hidden": [
+    {
+      "type": "Browser",
+      "pid": 18744,
+      "privateMB": 64.640625,
+      "workingMB": 114.453125,
+      "cpuPercent": 0.1192944584883688
+    },
+    {
+      "type": "GPU",
+      "pid": 8660,
+      "privateMB": 94.80078125,
+      "workingMB": 166.55078125,
+      "cpuPercent": 0.3037678911410033
+    },
+    {
+      "type": "Utility",
+      "pid": 2756,
+      "privateMB": 13.02734375,
+      "workingMB": 77.54296875,
+      "cpuPercent": 0
+    },
+    {
+      "type": "Tab",
+      "pid": 13464,
+      "privateMB": 68.6796875,
+      "workingMB": 134.21484375,
+      "cpuPercent": 0.12224718789350662
+    }
+  ]
+}

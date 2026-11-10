@@ -1,0 +1,128 @@
+{
+  "label": "current",
+  "durationMs": 6000,
+  "viewport": [
+    1536,
+    864,
+    1.25
+  ],
+  "data": {
+    "frames": 365,
+    "times": {
+      "simulationMs": 67.29999899864197,
+      "snapshotMs": 20.299999594688416,
+      "pheromoneMs": 385.7000000476837,
+      "portalMs": 123.60000050067902,
+      "foodMs": 3.6000001430511475,
+      "entryMs": 19.100000023841858,
+      "mapMs": 660.2000006437302,
+      "antsMs": 413.3999993801117,
+      "panelMs": 1.5999999046325684
+    },
+    "fullClears": 20,
+    "clearPixels": 89906887.520007,
+    "elapsed": 186.99600000000635,
+    "completedTrips": 60,
+    "renderer": {
+      "drawCalls": 36,
+      "iconClears": 22,
+      "spriteCount": 36,
+      "greetings": 4,
+      "atlasBuilds": 1,
+      "atlasBytes": 663552,
+      "canvasPixels": 1958400
+    },
+    "heap": 10000000
+  },
+  "processes": [
+    {
+      "type": "Browser",
+      "pid": 23408,
+      "privateMB": 63.921875,
+      "workingMB": 83.49609375,
+      "cpuPercent": -0.08954893597734315
+    },
+    {
+      "type": "GPU",
+      "pid": 6032,
+      "privateMB": 83.8671875,
+      "workingMB": 119.76171875,
+      "cpuPercent": 8.679110947663517
+    },
+    {
+      "type": "Utility",
+      "pid": 8600,
+      "privateMB": 13.0234375,
+      "workingMB": 44.3828125,
+      "cpuPercent": 0.020070611226345174
+    },
+    {
+      "type": "Tab",
+      "pid": 3480,
+      "privateMB": 68.40234375,
+      "workingMB": 119.92578125,
+      "cpuPercent": 4.279319998420353
+    }
+  ],
+  "paused": [
+    {
+      "type": "Browser",
+      "pid": 23408,
+      "privateMB": 63.921875,
+      "workingMB": 83.34765625,
+      "cpuPercent": 0.1512427604373166
+    },
+    {
+      "type": "GPU",
+      "pid": 6032,
+      "privateMB": 92.50390625,
+      "workingMB": 128.61328125,
+      "cpuPercent": 0.16099312841199087
+    },
+    {
+      "type": "Utility",
+      "pid": 8600,
+      "privateMB": 13.02734375,
+      "workingMB": 44.38671875,
+      "cpuPercent": 0.00042786453227344783
+    },
+    {
+      "type": "Tab",
+      "pid": 3480,
+      "privateMB": 68.4375,
+      "workingMB": 119.984375,
+      "cpuPercent": 0.01622927247332617
+    }
+  ],
+  "pausedFrames": 0,
+  "hidden": [
+    {
+      "type": "Browser",
+      "pid": 23408,
+      "privateMB": 63.921875,
+      "workingMB": 83.359375,
+      "cpuPercent": 0.19237332529049464
+    },
+    {
+      "type": "GPU",
+      "pid": 6032,
+      "privateMB": 92.5625,
+      "workingMB": 128.60546875,
+      "cpuPercent": 0.2198214507769279
+    },
+    {
+      "type": "Utility",
+      "pid": 8600,
+      "privateMB": 13.02734375,
+      "workingMB": 44.38671875,
+      "cpuPercent": 0
+    },
+    {
+      "type": "Tab",
+      "pid": 3480,
+      "privateMB": 67.9453125,
+      "workingMB": 119.5,
+      "cpuPercent": 0.11302328565777585
+    }
+  ]
+}

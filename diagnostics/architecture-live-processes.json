@@ -1,0 +1,42 @@
+[
+  {
+    "pid": 17768,
+    "name": "electron",
+    "privateMiB": 65.21,
+    "workingMiB": 81.96,
+    "cpuSeconds": 3.203125,
+    "command": "\"D:\\myProject\\deskAnts\\node_modules\\electron\\dist\\electron.exe\" ."
+  },
+  {
+    "pid": 13036,
+    "name": "electron",
+    "privateMiB": 43.29,
+    "workingMiB": 64.1,
+    "cpuSeconds": 1.34375,
+    "command": "\"D:\\myProject\\deskAnts\\node_modules\\electron\\dist\\electron.exe\" --type=gpu-process --user-data-dir=\"C:\\Users\\linqz\\AppData\\Roaming\\ant-colony-desktop-pet\" --gpu-preferences=WAAAAAAAAADgAAAMAAAAAAAAAAAAAAAAAABgAAEAAAA4AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAYAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --field-trial-handle=1800,i,10872191229852009336,9900875016546340614,262144 --disable-features=SpareRendererForSitePerProcess,WinDelaySpellcheckServiceInit,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version --mojo-platform-channel-handle=1792 /prefetch:2"
+  },
+  {
+    "pid": 19472,
+    "name": "electron",
+    "privateMiB": 13.07,
+    "workingMiB": 43.46,
+    "cpuSeconds": 0.140625,
+    "command": "\"D:\\myProject\\deskAnts\\node_modules\\electron\\dist\\electron.exe\" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=zh-CN --service-sandbox-type=none --user-data-dir=\"C:\\Users\\linqz\\AppData\\Roaming\\ant-colony-desktop-pet\" --field-trial-handle=2172,i,10872191229852009336,9900875016546340614,262144 --disable-features=SpareRendererForSitePerProcess,WinDelaySpellcheckServiceInit,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version --mojo-platform-channel-handle=2168 /prefetch:11"
+  },
+  {
+    "pid": 12944,
+    "name": "electron",
+    "privateMiB": 37.86,
+    "workingMiB": 78.32,
+    "cpuSeconds": 3.15625,
+    "command": "\"D:\\myProject\\deskAnts\\node_modules\\electron\\dist\\electron.exe\" --type=renderer --user-data-dir=\"C:\\Users\\linqz\\AppData\\Roaming\\ant-colony-desktop-pet\" --app-path=\"D:\\myProject\\deskAnts\" --no-sandbox --no-zygote --lang=zh-CN --device-scale-factor=1.25 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4 --time-ticks-at-unix-epoch=-1793471010675940 --launch-time-ticks=433993159591 --field-trial-handle=2568,i,10872191229852009336,9900875016546340614,262144 --disable-features=SpareRendererForSitePerProcess,WinDelaySpellcheckServiceInit,WinRetrieveSuggestionsOnlyOnDemand --variations-seed-version --mojo-platform-channel-handle=2564 /prefetch:1"
+  },
+  {
+    "pid": 10564,
+    "name": "desktop-probe-58afdc7378999668",
+    "privateMiB": 23.08,
+    "workingMiB": 35.76,
+    "cpuSeconds": 6.25,
+    "command": "C:\\Users\\linqz\\AppData\\Roaming\\ant-colony-desktop-pet\\desktop-probe-58afdc7378999668.exe -Watch -ProcessId 17768"
+  }
+]

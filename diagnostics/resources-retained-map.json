@@ -1,0 +1,93 @@
+{
+  "label": "retained-map",
+  "durationMs": 6019,
+  "viewport": [
+    1536,
+    864,
+    1.25
+  ],
+  "data": {
+    "frames": 375,
+    "times": {
+      "simulationMs": 66.20000010728836,
+      "snapshotMs": 16.099999606609344,
+      "mapMs": 615.3000006079674,
+      "antsMs": 380.29999935626984,
+      "panelMs": 2.200000047683716
+    },
+    "fullClears": 400,
+    "clearPixels": 514908983.5200017,
+    "elapsed": 187.00919999999414,
+    "completedTrips": 60,
+    "renderer": {
+      "drawCalls": 36,
+      "iconClears": 18,
+      "spriteCount": 36,
+      "greetings": 2,
+      "atlasBuilds": 1,
+      "atlasBytes": 663552,
+      "canvasPixels": 1958400
+    },
+    "heap": 11200000
+  },
+  "processes": [
+    {
+      "type": "Browser",
+      "pid": 10964,
+      "privateMB": 64.46484375,
+      "workingMB": 114.6015625,
+      "cpuPercent": 0.022703734137130803
+    },
+    {
+      "type": "GPU",
+      "pid": 25904,
+      "privateMB": 97.41796875,
+      "workingMB": 168.98828125,
+      "cpuPercent": 9.432444742054148
+    },
+    {
+      "type": "Utility",
+      "pid": 9760,
+      "privateMB": 12.98828125,
+      "workingMB": 77.4765625,
+      "cpuPercent": 0.00019968925024507696
+    },
+    {
+      "type": "Tab",
+      "pid": 10408,
+      "privateMB": 66.265625,
+      "workingMB": 132.1171875,
+      "cpuPercent": 4.100796252537691
+    }
+  ],
+  "hidden": [
+    {
+      "type": "Browser",
+      "pid": 10964,
+      "privateMB": 64.46484375,
+      "workingMB": 114.609375,
+      "cpuPercent": 0.17109208744437995
+    },
+    {
+      "type": "GPU",
+      "pid": 25904,
+      "privateMB": 97.39453125,
+      "workingMB": 168.96484375,
+      "cpuPercent": 0.40558759519416465
+    },
+    {
+      "type": "Utility",
+      "pid": 9760,
+      "privateMB": 12.98828125,
+      "workingMB": 77.4765625,
+      "cpuPercent": 0
+    },
+    {
+      "type": "Tab",
+      "pid": 10408,
+      "privateMB": 66.203125,
+      "workingMB": 132.1015625,
+      "cpuPercent": 0.18391412990481842
+    }
+  ]
+}

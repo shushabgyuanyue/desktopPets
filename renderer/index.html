@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蚁群 · 桌面宠物</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div id="mapFrame" class="map-frame">
+        <canvas id="mapCanvas" aria-label="桌面上的蚁群"></canvas>
+        <canvas id="antCanvas" aria-hidden="true"></canvas>
+        <div id="entryPayloadLayer" class="entry-payload-layer" aria-hidden="true"></div>
+        <div id="mapToast" class="map-toast" role="status" aria-live="polite"></div>
+        <span id="mapSize" hidden>—</span>
+      </div>
+
+      <aside id="controlPanel" class="control-panel" aria-label="蚁群控制">
+        <header class="titlebar">
+          <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="title-copy">
+            <h1>蚁群</h1>
+            <span id="topStatus" class="top-status">桌面宠物</span>
+          </div>
+          <div class="window-actions">
+            <button id="editModeBtn" class="edit-mode-btn" title="显示图标边界 · Ctrl + Alt + A" aria-pressed="false">图标边界</button>
+            <button id="collapseBtn" class="icon-btn collapse-btn" title="收起面板" aria-label="收起面板" aria-expanded="true"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 10 4-4 4 4" /></svg></button>
+            <button class="icon-btn close-btn" data-window="close" title="退出蚁群" aria-label="退出蚁群"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4.5 4.5 7 7m0-7-7 7" /></svg></button>
+          </div>
+        </header>
+
+        <div id="panelBody" class="panel-body">
+          <div class="run-copy">
+            <div class="run-heading"><span id="runDot" class="run-dot" aria-hidden="true"></span><strong id="runLabel">蚁群已就绪</strong></div>
+            <span id="runDetail">放一颗食物，看蚂蚁找到它</span>
+          </div>
+
+          <div class="primary-actions">
+            <button id="placeFoodBtn" class="food-btn" title="在桌面放置食物 · Ctrl + Alt + F"><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2.5v3m0 7v3m-6.5-6.5h3m7 0h3M4.4 4.4l2.1 2.1m5 5 2.1 2.1m0-9.2-2.1 2.1m-5 5-2.1 2.1" /><circle cx="9" cy="9" r="2.5" /></svg><span>放食物</span></button>
+            <button id="runBtn" class="run-btn" aria-pressed="false"><span id="runIcon" aria-hidden="true">▶</span><span id="runText">开始</span></button>
+          </div>
+
+          <div class="file-food-row">
+            <button id="fileFoodBtn" class="file-food-btn" title="选择或拖入一个或多个桌面文件">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 13.5v2h11v-2M10 12V3.5m0 0L6.8 6.7M10 3.5l3.2 3.2" /></svg>
+              <span class="file-food-copy"><strong>添加文件食物</strong><small>点击选择或拖入 · 可多选</small></span>
+            </button>
+          </div>
+          <div id="fileJobs" class="file-jobs" aria-label="文件食物" hidden></div>
+          <template id="fileJobTemplate">
+            <article class="file-job">
+              <div class="file-job-heading"><strong class="file-name"></strong><button class="file-cancel-btn" title="取消搬运" aria-label="取消搬运">×</button></div>
+              <span class="file-path"></span>
+              <div class="file-progress-row"><progress value="0" max="100"></progress><span class="file-progress-text">0%</span></div>
+              <div class="file-status-row"><span class="file-job-status"></span><button class="file-place-btn" hidden>重新定位</button><button class="file-retry-btn" hidden>重试回收</button></div>
+            </article>
+          </template>
+
+          <div class="pheromone-controls" aria-label="信息素显示">
+            <label class="pheromone-toggle"><input id="pheromoneToggle" type="checkbox" checked><span>信息素</span></label>
+            <span class="pheromone-key"><i class="exploration-key" aria-hidden="true"></i>探索</span>
+            <span class="pheromone-key"><i class="food-key" aria-hidden="true"></i>食物</span>
+          </div>
+
+          <details class="objects-disclosure">
+            <summary><span class="disclosure-label"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2.5" y="2.5" width="4" height="4" rx="1" /><rect x="9.5" y="2.5" width="4" height="4" rx="1" /><rect x="2.5" y="9.5" width="4" height="4" rx="1" /><rect x="9.5" y="9.5" width="4" height="4" rx="1" /></svg>桌面障碍<span id="objectCount" class="count-pill">0</span></span><svg class="disclosure-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="m5 6 3 3 3-3" /></svg></summary>
+            <div id="objectList" class="object-list"></div>
+          </details>
+
+          <div class="panel-footer">
+            <span class="shortcut-hint"><kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>F</kbd><span>放食物</span></span>
+            <button id="updateBtn" class="update-btn" title="检查官网版本更新"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13 5.5A5.5 5.5 0 0 0 3.5 3L2 4.5M2 4.5V1.8M2 4.5h2.7M3 10.5A5.5 5.5 0 0 0 12.5 13L14 11.5m0 0v2.7m0-2.7h-2.7" /></svg><span>检查更新</span></button>
+            <button id="resetBtn" class="reset-btn" title="清除普通食物，文件搬运继续">清除食物</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script src="./colony.js"></script>
+    <script src="./ant-sketch-renderer.bundle.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
