@@ -47,6 +47,16 @@ npm run dist:win:portable
 
 生成的 `dist/AntColony-<版本>-Portable.exe` 可以直接作为 GitHub Release 附件。用户从 Release 页面下载后双击运行；便携版升级时重新下载新版本。安装版仍使用 `latest.yml` 检查更新。
 
+也可以让安装版直接从 GitHub Release 检查更新：
+
+```powershell
+$env:ANT_UPDATE_URL = 'https://github.com/shushabgyuanyue/desktopPets/releases/latest/download/'
+npm run dist:win
+Remove-Item Env:ANT_UPDATE_URL
+```
+
+这要求每个 Release 都上传安装程序、`.blockmap` 和 `latest.yml`，并保持 `latest.yml` 中的文件名与 Release 附件一致。
+
 应用内的“检查更新”只在已安装、且构建时配置过 `ANT_UPDATE_URL` 的版本中启用。下载完成后由用户点击“重启并更新”；若仍有文件搬运任务，安装会等待任务完成或取消。文件数据存放在用户桌面，不会被升级覆盖。
 
 当前没有官网域名或代码签名证书，因此尚不能生成可连接到真实更新源的正式发行包。公开分发前应使用稳定域名和代码签名证书，降低安装器被篡改及 Windows 来源警告的风险。
